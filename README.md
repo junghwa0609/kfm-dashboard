@@ -1,4 +1,30 @@
-# 한국 금융시장과 소비에 대한 이해
+# Korean Financial Market Data Pipeline & Dashboard
+
+한국은행 Open API의 금융·소비 데이터를 수집해 AWS 데이터 웨어하우스에 적재하고, 환율·물가·부동산·경제심리지수의 관계를 시각화한 팀 프로젝트입니다.
+
+![한국 금융시장 대시보드](https://github.com/kor-financial-market-project/kfm-dashboard/assets/64184518/9d54313e-9d14-4092-b8ca-18d6ba1bafc3)
+
+## 한눈에 보기
+
+`한국은행 Open API` → `Python ETL` → `Amazon S3 / Redshift Serverless` → `Preset Dashboard`
+
+| 구분 | 내용 |
+| --- | --- |
+| 기간 | 2024.05 |
+| 형태 | 4인 팀 프로젝트 |
+| 기술 | Python, SQL, AWS S3, Redshift Serverless, Lambda, EventBridge, Preset |
+| 담당 | 물가지수·환율 데이터 수집 및 ETL, 소비·환율 대시보드 개발 |
+
+## 주요 구현
+
+- 한국은행 Open API를 이용한 금융지표 수집 및 전처리
+- S3와 Redshift Serverless 기반 분석 데이터 적재
+- 환율과 소비량에 따른 물가 관계를 분석하는 대시보드 구성
+- 팀 공통 분석을 위한 ETL 코드 작성
+
+---
+
+# 기존 프로젝트 상세 기록
 
 본 레포지토리는 **'데이터 웨어하우스를 이용한 대시보드 구성'** 을 주제로 진행된 팀 프로젝트의 결과물을 담은 레포지토리입니다.
 - extract directory : 데이터 수집/적재 관련 코드를 위한 저장소
